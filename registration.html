@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Cavemen Network - Registration</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="script.js"></script>
+    <section>
+        <div class="form-box-reg">
+            <div class="form-value">
+                    <h2>Registration</h2>
+                    <form action="registration.php" method="post">
+                      <div class="inputbox">
+                          <ion-icon name="mail-outline"></ion-icon>
+                          <input type="text"  id="username" name="username"required>
+                          <label for="">Name</label>
+                      </div>
+                      <div class="inputbox">
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <input type="password" id="password" name="password" required>
+                          <label for="">Password</label>
+                      </div>
+                      <div class="inputbox">
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <input type="password" id="cpassword" name="cpassword" required>
+                          <label for="">Confirm Password</label>
+                      </div>
+                      <div class="inputbox">
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <input type="idv" id="idv" name="idv" required>
+                          <label for="">ID</label>
+                      </div>
+                      <div class="inputbox">
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <input type="email" id="email" name="email" >
+                          <label for="">Email (optional)</label>
+                      </div>
+                      <button type="submit" class="button">Register</button>
+                    </form>
+                    <div class="register">
+                        <p>Already have an account? <a href="index.php">Login</a></p>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

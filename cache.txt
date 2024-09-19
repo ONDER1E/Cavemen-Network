@@ -1,0 +1,112 @@
+<?php
+function keygen(){
+  $key = bin2hex(random_bytes(32));
+  return $key;
+}
+if(isset($_POST["logout"])){
+  $logout = $_POST['logout'];
+} else {
+  $logout = "";
+}
+if(isset($_POST["sessionkey"])){
+  $sessionkey = $_POST['sessionkey'];
+} else {
+  $sessionkey = "";
+}
+if($logout == "true"){
+  session_destroy();
+	header("Location: index.php");
+}
+if(isset($_POST["username"])){
+  $username = $_POST['username'];
+} else {
+  $username = "";
+}
+if(isset($_POST["password"])){
+  $password = $_POST['password'];
+} else {
+  $password = "";
+}
+if(isset($_POST["stat"])){
+  $stat = $_POST['stat'];
+} else {
+  $stat = "";
+}
+if(isset($_POST["pass"])){
+  $pass = $_POST['pass'];
+  if($pass == "true"){
+    $sessionkeygen = keygen();
+    
+  }
+} else {
+  $pass = "";
+}
+if(!isset($_SESSION["username"])){
+  $_SESSION["username"] = "";
+}
+if(!isset($_SESSION["password"])){
+  $_SESSION["password"] = "";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Cavemen Network - Login</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="indexScript.js"></script>
+    <script>
+    var username = '<?php echo $_SESSION["username"] ;?>';
+    var password = '<?php echo $_SESSION["password"] ;?>';
+    if(username != ''){
+      if(password != ''){
+        function formAutoSubmit () {
+          document.getElementById("password").type = "password";
+          var frm = document.getElementById("formName");
+          frm.submit();
+        }
+    
+        window.onload = formAutoSubmit;
+      }
+    }
+    function makeItPassword()
+      {
+         document.getElementById("password").type = "password";
+         document.getElementById("password").focus();
+      }
+    
+    </script>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                    <h2>Login</h2>
+                    <form action="login.php" method="post" id="formName">
+                      <div class="inputbox">
+                          <ion-icon name="mail-outline"></ion-icon>
+                          <input type="text" id="username" name="username" value="<?php echo $_SESSION["username"]?>" autocomplete="off"required>
+                          <label for="">Name</label>
+                      </div>
+                      <div class="inputbox">
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <input type="text" onfocus="return makeItPassword()" id="password" name="password" value="<?php echo $_SESSION["password"]?>" required>
+                          <label for="">Password</label>
+                      </div>
+                      <div class="forgot">
+                          <label for=""><input type="checkbox" name="checkbox" id="rememberMe" value="checked">Remember Me </label>
+                          <a href="forgot.html">Forgot Password?</a>
+                      </div>
+                      <button type="submit" class="button" onclick="lsRememberMe()">Login</button>
+                      </form>
+                    <div class="register">
+                        <p>Don't have a account? <a href="registration.html">Register</a></p>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

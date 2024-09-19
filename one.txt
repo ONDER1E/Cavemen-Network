@@ -1,0 +1,11 @@
+<div class='msgln'><span class='chat-time'>‎ ‎ 4:04 PM</span> <b class='user-name'>umair</b> snigger<br></div>
+
+<div class='msgln'><span class='chat-time'>‎ ‎ 8:29 PM</span> <b class='user-name'>umair</b> the forgot password link now works in the login page<br></div>
+<!---->
+<div class='msgln'><span class='chat-time'>‎ ‎ 8:30 PM</span> <b class='user-name'>umair</b> as long as you have set your email<br></div>
+<!---->
+<div class='d'></div><div class='msgln'><span class='chat-time'>‎ ‎ 8:30 PM</span> <b class='user-name'>umair</b> if you haven't then you can set it in settings&gt;change_email<br></div>
+<div class='05/06/23'></div><div class='msgln'><span class='chat-time'>‎ ‎ <u>Monday 05 Jun, 23 - 05/06/23</u><br></div>
+<div class='05/06/23'></div><div class='msgln'><span class='chat-time'>‎ ‎ 3:30 PM</span> <b class='user-name'>umair</b> new update where the date will show if a message was sent on a different date than the message that was sent before it<br></div>
+<!---->
+<div class='05/06/23'></div><div class='msgln'><span class='chat-time'>‎ ‎ 3:32 PM</span> <b class='user-name'>umair</b> it works by storing the date for each message was sent and compares it with the current date to determine whether it should post the date or not<br></div>

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@media only screen and (orientation: landscape) {
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      
+      background: url('background6.jpg')no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  .channelbox{
+  background: #2e1c2c;
+  border: 2px solid #271b29 ;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 350px;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 450px;
+}
+  .channelboxred{
+  background: #2e1c2c;
+  border: 2px solid #271b29 ;
+  color: #fe0000;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 350px;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 450px;
+  transform: translate(6%, 0%);
+  
+}
+  .channelboxgold{
+  background: #2e1c2c;
+  border: 2px solid #271b29 ;
+  color: #ffa200;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 350px;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 450px; 
+}
+  .form-box{
+      position: relative;
+      width: 400px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .form-box-reg{
+      position: relative;
+      width: 400px;
+      height: 500px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .chat-box{
+      position: relative;
+      width: 800px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: block;
+      align-items: flex-end;
+      overflow-y: auto;
+      max-height: 800px; 
+  
+  }
+  .menu{
+    transform: translate(3%, -5%);
+  }
+}
+@media only screen and (orientation: portrait) {
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      
+      background: url('background6portrait.jpg')no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  .form-box{
+      position: relative;
+      width: 350px;
+      height: 400px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .form-box-reg{
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .chat-box{
+      position: relative;
+      width: 300px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: block;
+      align-items: flex-start;
+      overflow-y: auto;
+      max-height: 450px; 
+  
+  }
+  .channelbox{
+  background: #2e1c2c;
+  border: 2px solid #271b29 ;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 320px;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 450px; 
+}
+  .channelboxgold{
+  background: #2e1c2c;
+  border: 2px solid #271b29 ;
+  color: #ffa200;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 350px;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 450px; 
+}
+  .send-box{
+    transform: scale(2.5);
+    height: 60vh;
+    position:absolute;
+  }
+  .menu{
+    transform: scale(2.5);
+    height: 45vh;
+    position:absolute;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forgot{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+.button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.back:hover{
+    text-decoration: underline;
+}
+.back{
+  font-size: .9em;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: 600;
+}
+.friend{
+    font-size: .9em;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+.friend:hover{
+    text-decoration: underline;
+}

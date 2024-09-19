@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@media only screen and (orientation: landscape) {
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      
+      background: url('vecteezy_nature-landscape-background-beautiful-view-of-the-morning__533.jpg')no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  #usermsg {
+    width: 90%;
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid #0806a2;
+  }
+  .form-box{
+      position: relative;
+      width: 400px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .form-box-reg{
+      position: relative;
+      width: 400px;
+      height: 500px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .chat-box{
+      position: relative;
+      width: 800px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      display: block;
+      align-items: flex-end;
+      overflow-y: auto;
+      max-height: 800px;
+      color: white;
+  }
+  .send-box{
+    transform: translate(2%, -5%);
+  }
+  .menu{
+    transform: translate(3%, -5%);
+    color: white;
+  }
+  #submitmsg,
+  #enter{
+    background: #091332;
+    color: white;
+    font-weight: bold;
+    width: 6%
+  }
+}
+@media only screen and (orientation: portrait) {
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      
+      background: url('background6portrait.jpg')no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  .form-box{
+      position: relative;
+      width: 350px;
+      height: 400px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  #usermsg {
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid #0806a2;
+  }
+  .form-box-reg{
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .chat-box{
+      position: relative;
+      width: 300px;
+      height: 450px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      transform: scale(2.5);
+      display: block;
+      align-items: flex-start;
+      overflow-y: auto;
+      max-height: 450px; 
+  
+  }
+  .send-box{
+    transform: scale(2.5);
+    height: 65vh;
+    position:absolute;
+  }
+  .menu{
+    transform: scale(2.5);
+    height: 45vh;
+    position:absolute;
+  }
+  #submitmsg,
+  #enter{
+    background: #091332;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forgot{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.send-box{
+  margin: auto;
+}
+#usermsg, textarea {
+    background-color: #142761;
+    opacity: 0.8;
+    color: #ffffff;
+}
+.user-name{
+  color: black;
+}
+.chat-time{
+  color: black;
+}
+.logout:hover{
+  text-decoration: underline;
+}

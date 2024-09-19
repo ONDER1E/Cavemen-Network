@@ -1,0 +1,1 @@
+setTimeout(console.log("If someone told you to copy/paste something here, there's an 11/10 chance you're being scammed."), 1000);

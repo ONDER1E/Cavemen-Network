@@ -1,0 +1,10 @@
+sendgrid.env
+.env
+dms/upload/*
+gc/upload/*
+upload/*
+dms/*dm.txt
+dms/*.html
+gc/*gc.txt
+gc/*.html
+global.html
