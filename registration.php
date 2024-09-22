@@ -26,7 +26,7 @@
 	$conn = new mysqli($db_host, $db_user, $db_password, $db_name);
   $myfile = fopen("ids.txt", "r") or die("Unable to open file!");
   $file = fread($myfile,filesize("ids.txt"));
-  if($password != $cpassword){
+  if($password == $cpassword){
     if(strpos($file, $idv) !== false){
       $lines  = file('ids.txt');
       $search = $idv;
